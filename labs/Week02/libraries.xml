@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8">
+<catalogue category="Technical">
+	<book>
+		<isbn>978-0764588457</isbn>
+		<title>XML For Dummies</title>
+		<author> Lucinda Dykes, Ed Tittel</author>
+	</book>
+	<book>
+		<isbn>978-1119787600</isbn>
+		<title>Python All-in-One For Dummies, 2nd Edition</title>
+		<author> John C. Shovic, Alan Simpson</author>
+	</book>
+</catalogue>
+<catalogue category="Cookery">
+	<book>
+		<isbn>978-1785943898</isbn>
+		<title>Mary Berry’s Quick Cooking</title>
+		<author>Mary Berry</author>
+	</book>
+	<book>
+		<isbn>978-1782060062</isbn>
+		<title>The Hungry Student Cookbook</title>
+		<author>Charlotte Pike</author>
+	</book>
+</catalogue>

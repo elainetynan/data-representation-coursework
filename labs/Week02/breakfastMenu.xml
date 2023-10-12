@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8">
+<breakfast_menu>
+    <food>
+        <name>Full Irish</name>
+        <price>9.95</price>
+        <description>
+            sausage, bacon, eggs, black pudding, beans & chips
+        </description>
+        <calories>1050</calories>
+    </food>
+    <food>
+        <name>Porridge</name>
+        <price>6.95</price>
+        <description>
+            Cooked oats with milk, nuts and berries
+        </description>
+        <calories>600</calories>
+    </food>
+</breakfast_menu>
