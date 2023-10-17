@@ -28,35 +28,37 @@ def getFormatted(dataset):
     valuecount = 0
     result = {}
     
-    for dim0 in range(0, sizes[0]):
+    for dim0 in range(0, sizes[0]): # dimension 0 - ["Statistic"]["category"]["label"][index]
         currentId = ids[0]
         index = dimensions[currentId]["category"]["index"][dim0]
         label0 = dimensions[currentId]["category"]["label"][index]
         result[label0]={}
+        #print(label0)
         
-        print("~"+label0)
-        for dim1 in range(0, sizes[1]):
+        #print("~"+label0)
+        for dim1 in range(0, sizes[1]): # dimension 1 - ["TList(A1)"]["category"]["label"][index]
             currentId = ids[1]
             index = dimensions[currentId]["category"]["index"][dim1]
             label1 = dimensions[currentId]["category"]["label"][index]
             #print("\t",label1)
             result[label0][label1]={}
-            for dim2 in range(0, sizes[2]):
+            
+            for dim2 in range(0, sizes[2]): # dimension 2 - ["C02199V02655"]["category"]["label"][index]
                 currentId = ids[2]
                 index = dimensions[currentId]["category"]["index"][dim2]
                 label2 = dimensions[currentId]["category"]["label"][index]
                 #print("\t\t",label2)
                 result[label0][label1][label2]={}
            
-                for dim3 in range(0, sizes[3]):
+                for dim3 in range(0, sizes[3]): # dimension 3 - ["C03788V04538"]["category"]["label"][index]
                     currentId = ids[3]
                     index = dimensions[currentId]["category"]["index"][dim3]
                     label3 = dimensions[currentId]["category"]["label"][index]
-                    #print("\t\t\t",label, " ", values[valuecount])
+                    #print("\t\t\t",label3, " ", values[valuecount])
                     result[label0][label1][label2][label3]= values[valuecount]
                     valuecount+=1
 
-        
+    print(result)    
     return result
     
 if __name__ == "__main__":

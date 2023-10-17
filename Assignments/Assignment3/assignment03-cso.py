@@ -11,5 +11,7 @@ def getAll(dataset):
     return response.json()
 
 if __name__ == "__main__":
-    with open("cso.json", "wt") as fp:
+    # Putting cso.json file in this current directory as I don't want to overwrite
+    # the one in the root directory of my repository from class examples.
+    with open("./Assignments/Assignment3/cso.json", "wt") as fp:
         print(json.dumps(getAll("FIQ02")), file=fp)
