@@ -17,7 +17,7 @@ url = 'https://api.github.com/repos/elainetynan/aprivateone'
 #response = requests.get(url, headers= headers)
 
 #apikey = cfg["githubkey"]
-apikey = "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"
+apikey = ""
 response = requests.get(url, auth = ('token', apikey))
 
 print (response.status_code)
