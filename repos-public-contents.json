@@ -1,0 +1,82 @@
+[
+    {
+        "name": "README.md",
+        "path": "README.md",
+        "sha": "914e5903807c31c4757b80f8cfc4dc7d2dc0b0a5",
+        "size": 57,
+        "url": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/contents/README.md?ref=main",
+        "html_url": "https://github.com/andrewbeattycourseware/datarepresentation/blob/main/README.md",
+        "git_url": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/git/blobs/914e5903807c31c4757b80f8cfc4dc7d2dc0b0a5",
+        "download_url": "https://raw.githubusercontent.com/andrewbeattycourseware/datarepresentation/main/README.md",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/contents/README.md?ref=main",
+            "git": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/git/blobs/914e5903807c31c4757b80f8cfc4dc7d2dc0b0a5",
+            "html": "https://github.com/andrewbeattycourseware/datarepresentation/blob/main/README.md"
+        }
+    },
+    {
+        "name": "admin",
+        "path": "admin",
+        "sha": "f4c964c4ef5c20b747296ad1e7a8b399577b99e0",
+        "size": 0,
+        "url": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/contents/admin?ref=main",
+        "html_url": "https://github.com/andrewbeattycourseware/datarepresentation/tree/main/admin",
+        "git_url": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/git/trees/f4c964c4ef5c20b747296ad1e7a8b399577b99e0",
+        "download_url": null,
+        "type": "dir",
+        "_links": {
+            "self": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/contents/admin?ref=main",
+            "git": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/git/trees/f4c964c4ef5c20b747296ad1e7a8b399577b99e0",
+            "html": "https://github.com/andrewbeattycourseware/datarepresentation/tree/main/admin"
+        }
+    },
+    {
+        "name": "code",
+        "path": "code",
+        "sha": "9c2eee3e2b19577abebe40ac8885507c2fcd1600",
+        "size": 0,
+        "url": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/contents/code?ref=main",
+        "html_url": "https://github.com/andrewbeattycourseware/datarepresentation/tree/main/code",
+        "git_url": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/git/trees/9c2eee3e2b19577abebe40ac8885507c2fcd1600",
+        "download_url": null,
+        "type": "dir",
+        "_links": {
+            "self": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/contents/code?ref=main",
+            "git": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/git/trees/9c2eee3e2b19577abebe40ac8885507c2fcd1600",
+            "html": "https://github.com/andrewbeattycourseware/datarepresentation/tree/main/code"
+        }
+    },
+    {
+        "name": "labs",
+        "path": "labs",
+        "sha": "73827a61eecdfe5df789140c0e256c6bf99ddaa6",
+        "size": 0,
+        "url": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/contents/labs?ref=main",
+        "html_url": "https://github.com/andrewbeattycourseware/datarepresentation/tree/main/labs",
+        "git_url": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/git/trees/73827a61eecdfe5df789140c0e256c6bf99ddaa6",
+        "download_url": null,
+        "type": "dir",
+        "_links": {
+            "self": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/contents/labs?ref=main",
+            "git": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/git/trees/73827a61eecdfe5df789140c0e256c6bf99ddaa6",
+            "html": "https://github.com/andrewbeattycourseware/datarepresentation/tree/main/labs"
+        }
+    },
+    {
+        "name": "slides",
+        "path": "slides",
+        "sha": "f75fea10ab2d83755922a9e5c2c95dc4ea1d708c",
+        "size": 0,
+        "url": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/contents/slides?ref=main",
+        "html_url": "https://github.com/andrewbeattycourseware/datarepresentation/tree/main/slides",
+        "git_url": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/git/trees/f75fea10ab2d83755922a9e5c2c95dc4ea1d708c",
+        "download_url": null,
+        "type": "dir",
+        "_links": {
+            "self": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/contents/slides?ref=main",
+            "git": "https://api.github.com/repos/andrewbeattycourseware/datarepresentation/git/trees/f75fea10ab2d83755922a9e5c2c95dc4ea1d708c",
+            "html": "https://github.com/andrewbeattycourseware/datarepresentation/tree/main/slides"
+        }
+    }
+]
