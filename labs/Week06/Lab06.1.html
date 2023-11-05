@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>6.1. View books</title>
+        <style>
+            label {
+                display: block;
+                width: 8em;
+                float: left;
+                text-align: right;
+                margin-right: 0.8em;
+            }
+            input, select {
+                width: 20em;
+            }
+            table, th, td {
+                border: 1px solid black;
+                padding: 5px;
+            }
+            table{
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Books</h1>
+        <p><button>Create a book</button></p>
+        <div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Harry Potter does something</td>
+                    <td>JK Rowling</td>
+                    <td>12</td>
+                    <td><button>update</button></td>
+                    <td><button>delete</button></td>
+                </tr>
+            </table>
+            <br/>
+        </div>
+        <div id = "myForm">
+            <!-- spans are like divs but do not go onto a new line -->
+            <h2><span>Create a</span> <span style="display:none">Update this</span> Book</h2>
+            <p><label for="id">id</label><input type="text" name="id"></p>
+            <p></p><label for="price">Title</label><input type="text" name="title"></p>
+            <p></p><label for="author">Author</label><input type="text" name="author"></p>
+            <p></p><label for="price">Price</label><input type="number" name="price"></p>
+            <label for="status">Just to show select</label><select name="status">
+                <option value="instock">in stock</option>
+                <option value="outstock">out of stock</option>
+                <option value="other">out of print</option>
+            </select><br/>
+            <span><button>Create</button></span>
+ 			<span><button style="display:none">Update</button></span>
+             <!-- "display:none" will make it hidden-->
+        </div>
+    </body>
+</html>

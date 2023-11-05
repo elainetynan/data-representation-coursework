@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>6.3. Test Get All</title>
+        <style>
+
+        </style>
+        <!-- need this script to use Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+        <script>
+            function getAll(callback) {
+                $.ajax({
+                    "url": "http://andrewbeatty1.pythonanywhere.com/books",
+                    "method":"GET",
+                    "data":"",
+                    "dataType": "JSON",
+                    "success":function(result){
+                        //console.log(result);
+                        callback(result)
+            
+                    },
+                    "error":function(xhr,status,error){
+                        console.log("error: "+status+" msg:"+error);
+                    }
+                });
+            }
+            function processGetAll(result) {
+                console.log("In process");
+                console.log(result);
+            }
+
+            //getAll(processGetAll);
+
+            // Testing the code
+            function createBook(book, callback){
+                console.log(JSON.stringify(book));
+                $.ajax({
+                    "url": "http://andrewbeatty1.pythonanywhere.com/books",
+                    "method":"POST",
+                    "data":JSON.stringify(book),
+                    "dataType": "JSON",
+                    contentType: "application/json; charset=utf-8",
+                    "success":function(result){
+                        //console.log(result);
+                        callback(result)  
+                    },
+                    "error":function(xhr,status,error){
+                        console.log("error: "+status+" msg:"+error);
+                    }
+                });
+
+            }
+
+            function processCreateResponse(result) {
+                console.log(result);
+            }
+
+            book = {"Title":"Title1", "Author":"Author1", "Price":10}; // Do not use decimal numbers in the price
+            //createBook(book, processCreateResponse);
+
+            function updateBook(book, callback){
+                //console.log(JSON.stringify(book));
+                $.ajax({
+                    "url": "http://andrewbeatty1.pythonanywhere.com/books/"+encodeURI(book.id),
+                    "method":"PUT",
+                    "data":JSON.stringify(book),
+                    "dataType": "JSON",
+                    contentType: "application/json; charset=utf-8",
+                    "success":function(result){
+                        //console.log(result);
+                        callback(result)   
+                    },
+                    "error":function(xhr,status,error){
+                        console.log("error: "+status+" msg:"+error);
+                    }
+                });
+            }
+
+            function processUpdateReponse(result) {
+                console.log("In process Update");
+                console.log(result);
+            }
+
+            book = {id:180, "Price":88}; // Do not use decimal numbers in the price
+            //updateBook(book, processUpdateReponse);
+
+            function deleteBook(id, callback){
+                $.ajax({
+                    "url": "http://andrewbeatty1.pythonanywhere.com/books/"+id,
+                    "method":"DELETE",
+                    "data":"",
+                    "dataType": "JSON",
+                    contentType: "application/json; charset=utf-8",
+                    "success":function(result){
+                        //console.log(result);
+                        callback(result)  
+                    },
+                    "error":function(xhr,status,error){
+                        console.log("error: "+status+" msg:"+error);
+                    }
+                });
+            }
+
+            function processDeleteResponse(result) {
+                console.log("In process Delete");
+                console.log(result);
+            }
+            //deleteBook(380, processDeleteResponse); // 380-383
+
+            function processGetAllResponse(result){
+                console.log("in process")
+                //console.log(result)
+                for (book of result){
+                    console.log(book)
+                    // issue the format of the book object is different from lab06.02
+                    // there are two solutions change the book object in lan06.02 to have capitals 
+                    // or convert
+                    displayBook = {}
+                    displayBook.id = book.id
+                    displayBook.author = book.Author
+                    displayBook.title = book.Title
+                    displayBook.price = book.Price
+                    // you can now pass it to addBookToTable
+                }
+            }
+            getAll(processGetAllResponse)
+        </script>
+        
+    </body>
+</html>

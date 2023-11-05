@@ -1,0 +1,38 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>2.9.2</title>
+	</head>
+	<body>
+        <table id="mainTable">
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td><button onclick="doRow(this)">output</button></td>
+            </tr>
+        </table>
+        <button onclick="createRow()">Create Row</button>
+        <script>
+            function doRow(buttonElement) {
+                var rowElement = buttonElement.parentNode.parentNode;
+                var data = {};
+                data.cell1 = rowElement.cells[0].firstChild.textContent;
+                data.cell2 = rowElement.cells[1].firstChild.textContent;
+                console.log(JSON.stringify(data));
+            }
+            function createRow(buttonElement) {
+                var tableElement = document.getElementById('mainTable');
+                var data = {cell1:'Hello', cell2:'Goodbye',cell3:'Thanks for calling'};
+
+                var rowElement = tableElement.insertRow(-1); // -1 for add at end, 0 to add at start
+                var cellElemenet = rowElement.insertCell(0);
+                cellElemenet.innerHTML = data.cell1;
+                var cellElemenet = rowElement.insertCell(1);
+                cellElemenet.innerHTML = data.cell2;
+                var cellElemenet = rowElement.insertCell(2);
+                cellElemenet.innerHTML = data.cell3;
+            }
+        </script>
+	</body>
+</html>
