@@ -19,5 +19,6 @@ def getAll():
     return response.json()
 
 if __name__ == "__main__":
-    with open("valoff.json", "wt") as fp:
-        print(json.dumps(getAll()), file=fp)
+    #with open("valoff.json", "wt") as fp:
+    #    print(json.dumps(getAll()), file=fp)
+    print(getAll())
